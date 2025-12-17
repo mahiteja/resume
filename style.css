@@ -6,15 +6,19 @@
 }
 
 :root {
-    --primary-color: #1a365d;
-    --secondary-color: #2563eb;
-    --accent-color: #0891b2;
-    --text-color: #1f2937;
+    --primary-color: #0f172a;
+    --secondary-color: #0ea5e9;
+    --accent-color: #06b6d4;
+    --text-color: #334155;
+    --text-dark: #1e293b;
     --bg-color: #ffffff;
     --light-bg: #f8fafc;
     --border-color: #e2e8f0;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
     --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --gradient-start: #0c4a6e;
+    --gradient-mid: #0369a1;
+    --gradient-end: #0ea5e9;
 }
 
 html {
@@ -22,12 +26,13 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
 }
 
 .container {
@@ -39,12 +44,15 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
     color: white;
-    padding: 50px 40px 40px;
+    padding: 30px 40px 25px;
     text-align: center;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 header::before {
@@ -61,23 +69,24 @@ header::before {
 .header-content {
     position: relative;
     z-index: 1;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.95);
     letter-spacing: 0.5px;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .contact-info {
@@ -85,7 +94,7 @@ header h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     position: relative;
     z-index: 1;
 }
@@ -93,9 +102,9 @@ header h1 {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 8px 16px;
+    padding: 6px 14px;
     border-radius: 25px;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
@@ -152,8 +161,9 @@ section {
 .summary-text {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: var(--text-color);
+    color: var(--text-dark);
     text-align: justify;
+    font-weight: 400;
 }
 
 .summary-text strong {
@@ -166,14 +176,15 @@ section:last-child {
 }
 
 h2 {
+    font-family: 'Playfair Display', Georgia, serif;
     color: var(--primary-color);
     font-size: 1.9rem;
     margin-bottom: 25px;
     padding-bottom: 12px;
     border-bottom: 2px solid var(--border-color);
     position: relative;
-    font-weight: 600;
-    letter-spacing: 0.3px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 h2::before {
@@ -201,12 +212,13 @@ h2::before {
 }
 
 .profile-summary li::before {
-    content: '▹';
+    content: '◆';
     color: var(--secondary-color);
     font-weight: bold;
     position: absolute;
     left: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
 }
 
 /* Skills Section */
@@ -252,22 +264,64 @@ h2::before {
     color: var(--primary-color);
     font-size: 1.15rem;
     margin-bottom: 12px;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.3px;
     display: flex;
     align-items: center;
 }
 
 .skill-category h3::before {
-    content: '▸';
+    content: '◉';
     color: var(--secondary-color);
     margin-right: 8px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
 }
 
 .skill-category p {
     color: var(--text-color);
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.skill-category li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+}
+
+.skill-category li:last-child {
+    margin-bottom: 0;
+}
+
+.skill-category li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.skill-category li:hover {
+    padding-left: 25px;
+    color: var(--secondary-color);
+}
+
+.skill-category li:hover::before {
+    left: 3px;
+    color: var(--secondary-color);
 }
 
 /* Work Experience */
@@ -314,8 +368,8 @@ h2::before {
 .job h3 {
     color: var(--primary-color);
     font-size: 1.35rem;
-    font-weight: 600;
-    letter-spacing: 0.2px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .date {
@@ -329,7 +383,7 @@ h2::before {
 }
 
 .company {
-    color: #4b5563;
+    color: var(--text-color);
     font-weight: 500;
     font-size: 1.05rem;
     margin-bottom: 16px;
@@ -349,12 +403,13 @@ h2::before {
 }
 
 .job li::before {
-    content: '•';
-    color: var(--secondary-color);
+    content: '❯';
+    color: var(--accent-color);
     font-weight: bold;
     position: absolute;
     left: 8px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-shadow: 0 2px 4px rgba(8, 145, 178, 0.3);
 }
 
 /* Footer */
@@ -369,15 +424,17 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-        padding: 40px 20px 30px;
+        padding: 25px 20px 20px;
+        position: sticky;
+        top: 0;
     }
 
     header h1 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     .title {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     .contact-info {

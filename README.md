@@ -21,7 +21,6 @@ A professional, responsive HTML resume optimized for GitHub Pages with modern de
 my-resume/
 ├── index.html          # Main HTML resume file
 ├── style.css           # Stylesheet with responsive design
-├── Mahiteja_Bollojula.docx  # Original resume (DOCX format)
 └── README.md           # This file
 ```
 
