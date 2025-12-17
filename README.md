@@ -27,36 +27,54 @@ my-resume/
 
 ## Deploying to GitHub Pages
 
-### Option 1: Using GitHub Web Interface
+### Automatic Deployment with GitHub Actions (Recommended)
 
-1. Create a new repository on GitHub (e.g., `my-resume`)
-2. Go to the repository settings
-3. Navigate to "Pages" section in the left sidebar
-4. Under "Source", select the branch you want to deploy (usually `main` or `master`)
-5. Select the root folder (`/`) as the source
-6. Click "Save"
-7. Your resume will be available at: `https://yourusername.github.io/my-resume/`
+This repository includes a GitHub Actions workflow that automatically deploys your resume to GitHub Pages on every push to the `main` branch.
 
-### Option 2: Using Git Command Line
+**Setup Steps:**
 
-```bash
-# Initialize git repository
-git init
+1. **Push your code to GitHub:**
+   ```bash
+   git add .
+   git commit -m "Add resume with GitHub Actions workflow"
+   git push -u origin main
+   ```
 
-# Add all files
-git add .
+2. **Enable GitHub Pages:**
+   - Go to your repository on GitHub
+   - Click on **Settings** → **Pages** (in the left sidebar)
+   - Under **Source**, select **GitHub Actions**
+   - Save the settings
 
-# Commit files
-git commit -m "Initial commit: Add HTML resume"
+3. **Automatic Deployment:**
+   - The workflow will automatically run on every push to `main`
+   - Your resume will be available at: `https://yourusername.github.io/repository-name/`
+   - Check the **Actions** tab to monitor deployment progress
 
-# Add remote repository
-git remote add origin https://github.com/yourusername/my-resume.git
+### Manual Deployment (Alternative)
 
-# Push to GitHub
-git push -u origin main
-```
+If you prefer manual deployment without GitHub Actions:
 
-Then follow steps 2-7 from Option 1 to enable GitHub Pages.
+1. Go to repository **Settings** → **Pages**
+2. Under **Source**, select **Deploy from a branch**
+3. Choose `main` branch and `/ (root)` folder
+4. Click **Save**
+
+### GitHub Actions Workflow
+
+The included workflow (`.github/workflows/deploy.yml`) provides:
+- ✅ Automatic deployment on every push to `main`
+- ✅ Manual deployment trigger via Actions tab
+- ✅ Proper permissions configuration
+- ✅ Concurrent deployment handling
+- ✅ Built-in artifact upload and deployment
+
+**Workflow Features:**
+- Triggers on push to `main` branch
+- Can be manually triggered from Actions tab
+- Uses official GitHub Pages actions
+- Deploys entire repository content
+- Shows deployment status and URL
 
 ## Local Development
 
