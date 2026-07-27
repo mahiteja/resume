@@ -1,966 +1,1013 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mahiteja Bollojula resume - Lead Automation Engineer with experience in Selenium, Playwright, API testing, CI/CD, AWS, and performance testing.">
-    <meta name="keywords" content="Lead Automation Engineer, Selenium, Playwright, Rest Assured, Cucumber, Java, TypeScript, CI/CD, Jenkins, Docker, AWS, API Testing">
-    <meta name="author" content="Mahiteja Bollojula">
-    <title>Mahiteja Bollojula Resume</title>
-    <style>
-        :root {
-            --bg: #edf1f6;
-            --paper: #ffffff;
-            --text: #182432;
-            --muted: #4b5c70;
-            --line: #d4deea;
-            --accent: #134c7d;
-            --accent-soft: #eff5fd;
-            --section-soft: #fbfdff;
-            --shadow: 0 10px 24px rgba(15, 34, 58, 0.1);
-            --radius: 14px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Resume of Mahiteja Bollojula, Principal / Lead Test Automation Engineer and SDET with 10+ years of experience across enterprise web, API, mobile, data, and performance testing." />
+  <meta name="keywords" content="Principal SDET, Senior SDET, QA Lead, Test Lead, Engineering Manager, QA Manager, Selenium, Playwright, Rest Assured, Cucumber, Appium, Perfecto, CI/CD, AWS, Jenkins, GitLab CI/CD" />
+  <meta name="author" content="Mahiteja Bollojula" />
+  <title>Mahiteja Bollojula | Principal / Lead SDET Resume</title>
+  <style>
+    :root {
+      --ink: #142033;
+      --muted: #4c5f76;
+      --soft: #71839b;
+      --line: #d9e1ec;
+      --paper: #ffffff;
+      --navy: #0f3b63;
+      --teal: #0a7f78;
+      --steel: #eef3f9;
+      --accent: #e8f4ff;
+      --good: #ecf8f3;
+      --shadow: 0 14px 34px rgba(13, 32, 55, 0.12);
+    }
 
-        * {
-            box-sizing: border-box;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(160deg, #e7ecf3 0%, var(--bg) 50%, #e6edf5 100%);
-            color: var(--text);
-            font-family: "Aptos", "Calibri", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.4;
-            font-size: 14px;
-        }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 6%, #e8f3ff 0%, transparent 30%),
+        radial-gradient(circle at 94% 2%, #e8fff4 0%, transparent 26%),
+        linear-gradient(170deg, #f3f7fb 0%, #edf3f9 100%);
+      font-family: "Segoe UI", "Calibri", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.45;
+      font-size: 14px;
+    }
 
-        .page-wrap {
-            min-height: 100vh;
-            padding: 20px 16px 74px;
-        }
+    .sheet {
+      width: min(980px, 100%);
+      margin: 20px auto 40px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
 
-        .resume {
-            width: min(900px, 100%);
-            margin: 0 auto;
-            background: var(--paper);
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            overflow: hidden;
-        }
+    header {
+      position: relative;
+      padding: 28px 30px 22px;
+      border-bottom: 2px solid var(--line);
+      background:
+        linear-gradient(115deg, #ffffff 0%, #f7fbff 60%, #eff8ff 100%);
+      overflow: hidden;
+    }
 
-        .resume-header {
-            padding: 22px 26px 16px;
-            border-bottom: 2px solid var(--line);
-            background: linear-gradient(180deg, #f4f8fd 0%, #eef4fb 100%);
-        }
+    header::before {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -120px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15, 59, 99, 0.12) 0%, rgba(15, 59, 99, 0) 68%);
+      pointer-events: none;
+    }
 
-        h1 {
-            margin: 0 0 6px;
-            font-size: clamp(27px, 3.5vw, 34px);
-            line-height: 1.1;
-            letter-spacing: 0.2px;
-            font-family: "Cambria", "Times New Roman", serif;
-        }
+    h1 {
+      margin: 0;
+      font-size: clamp(31px, 4vw, 40px);
+      line-height: 1.05;
+      letter-spacing: 0.3px;
+      color: var(--navy);
+      font-weight: 800;
+    }
 
-        .headline {
-            margin: 0 0 8px;
-            font-weight: 600;
-            color: var(--accent);
-            font-size: 16px;
-        }
+    .title-line {
+      margin: 8px 0 12px;
+      font-size: 17px;
+      color: #11395c;
+      font-weight: 700;
+    }
 
-        .contact-line {
-            margin: 0;
-            color: var(--muted);
-            font-size: 13.5px;
-            word-break: break-word;
-        }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-weight: 600;
+    }
 
-        .contact-line a {
-            color: var(--text);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-        }
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
 
-        .contact-line a:hover,
-        .contact-line a:focus-visible {
-            border-color: var(--accent);
-            outline: none;
-        }
+    .contact a:hover,
+    .contact a:focus-visible {
+      border-color: var(--navy);
+      outline: none;
+    }
 
-        main {
-            padding: 8px 24px 20px;
-        }
+    main {
+      padding: 16px 26px 24px;
+    }
 
-        section {
-            padding: 10px 12px;
-            border-bottom: 1px solid var(--line);
-            background: var(--section-soft);
-            border-radius: 12px;
-            margin-top: 8px;
-            box-shadow: 0 1px 0 rgba(20, 50, 84, 0.03);
-        }
+    .section {
+      margin: 0 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fcfeff;
+      overflow: hidden;
+    }
 
-        section:last-child {
-            border-bottom: none;
-        }
+    .section-title {
+      margin: 0;
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, #f4f9ff 0%, #f9fcff 100%);
+      color: var(--navy);
+      font-size: 13.5px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
 
-        h2 {
-            margin: 0 0 8px;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: var(--accent);
-        }
+    .section-body {
+      padding: 11px 12px 12px;
+    }
 
-        h3 {
-            margin: 0;
-            font-size: 14px;
-            color: #152132;
-        }
+    .summary {
+      margin: 0;
+      font-size: 13.5px;
+    }
 
-        p {
-            margin: 4px 0;
-        }
+    .summary strong {
+      color: #103a62;
+    }
 
-        ul {
-            margin: 5px 0 0 18px;
-            padding: 0;
-        }
+    .highlight-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
 
-        li {
-            margin-bottom: 3px;
-        }
+    .highlight {
+      border: 1px solid #cddded;
+      background: var(--accent);
+      border-radius: 9px;
+      padding: 7px 8px;
+      font-weight: 700;
+      color: #144267;
+      font-size: 12.4px;
+      text-align: center;
+    }
 
-        .summary-intro {
-            margin: 0;
-            padding: 9px 10px;
-            background: var(--accent-soft);
-            border: 1px solid #c9daee;
-            border-radius: 10px;
-        }
+    .expertise-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-        .experience-list {
-            margin: 8px 0 0 18px;
-            padding: 0;
-            list-style-type: disc;
-        }
+    .expertise-list li {
+      border: 1px solid #d4e0ee;
+      background: #f8fbff;
+      border-radius: 9px;
+      padding: 8px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #19405f;
+    }
 
-        .experience-list > li {
-            margin-bottom: 10px;
-            padding-left: 4px;
-        }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
 
-        .experience-timeline {
-            margin-top: 10px;
-            position: relative;
-            padding-left: 18px;
-            border-left: 2px solid #c9d8ea;
-        }
+    .skill-card {
+      border: 1px solid #d7e2ef;
+      border-radius: 10px;
+      padding: 8px 9px;
+      background: linear-gradient(180deg, #ffffff 0%, #f9fcff 100%);
+    }
 
-        .timeline-step {
-            position: relative;
-            margin: 0 0 10px;
-            padding: 8px 10px 8px 12px;
-            border: 1px solid #d9e3f0;
-            border-radius: 10px;
-            background: #ffffff;
-            box-shadow: 0 1px 0 rgba(16, 42, 72, 0.04);
-        }
+    .skill-card h3 {
+      margin: 0 0 5px;
+      font-size: 12.8px;
+      color: #103a61;
+      font-weight: 800;
+    }
 
-        .timeline-step:last-child {
-            margin-bottom: 0;
-        }
+    .skill-card p {
+      margin: 0;
+      font-size: 12.8px;
+      color: #21344d;
+    }
 
-        .timeline-step::before {
-            content: "";
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--accent);
-            border: 2px solid #ffffff;
-            box-shadow: 0 0 0 1px #9bb8d8;
-            left: -25px;
-            top: 14px;
-        }
+    .jobs {
+      display: grid;
+      gap: 10px;
+    }
 
-        .timeline-year {
-            display: inline-block;
-            margin: 0 0 4px;
-            padding: 2px 8px;
-            border-radius: 999px;
-            background: #eaf2fc;
-            color: #24476a;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.3px;
-        }
+    article.job {
+      border: 1px solid #d7e2ef;
+      border-radius: 11px;
+      background: #ffffff;
+      overflow: hidden;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
 
-        .job {
-            margin: 0;
-            padding: 0;
-            border: none;
-        }
+    .job-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: start;
+      padding: 8px 10px;
+      background: linear-gradient(90deg, #f4f9ff 0%, #fbfdff 100%);
+      border-bottom: 1px solid #dce7f2;
+    }
 
-        .job:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
-        }
+    .job-head h3 {
+      margin: 0;
+      font-size: 14.2px;
+      color: #122f4a;
+    }
 
-        .employer {
-            margin-top: 2px;
-            margin-bottom: 0;
-            color: #20344c;
-            font-weight: 600;
-        }
+    .company {
+      margin: 2px 0 0;
+      color: #31506f;
+      font-weight: 700;
+      font-size: 12.8px;
+    }
 
-        .date-range {
-            margin: 0;
-            color: var(--muted);
-            font-size: 12.5px;
-            font-weight: 600;
-            text-align: left;
-        }
+    .date {
+      margin: 0;
+      color: #35577a;
+      font-size: 12.3px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
 
-        .skill-group {
-            margin-bottom: 6px;
-        }
+    .job-body {
+      padding: 8px 11px 10px;
+    }
 
-        .skill-group:last-child {
-            margin-bottom: 0;
-        }
+    .job-body ul {
+      margin: 0;
+      padding-left: 18px;
+    }
 
-        .skill-group p {
-            margin: 0;
-        }
+    .job-body li {
+      margin-bottom: 4px;
+      font-size: 12.8px;
+    }
 
-        .skill-label {
-            font-weight: 700;
-            color: #223245;
-        }
+    .job-body li:last-child {
+      margin-bottom: 0;
+    }
 
-        .placeholder-note {
-            color: var(--muted);
-            font-style: italic;
-        }
+    .pill-row {
+      margin-top: 7px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
 
-        .toolbar {
-            position: fixed;
-            right: 14px;
-            bottom: 14px;
-            z-index: 1000;
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            max-width: calc(100vw - 28px);
-            background: rgba(16, 28, 43, 0.9);
-            padding: 9px;
-            border-radius: 12px;
-            backdrop-filter: blur(6px);
-            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
-        }
+    .pill {
+      border: 1px solid #bad0e6;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 11.3px;
+      color: #174161;
+      background: #f1f8ff;
+      font-weight: 700;
+    }
 
-        .toolbar button {
-            appearance: none;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: #ffffff;
-            color: #102238;
-            border-radius: 7px;
-            padding: 7px 9px;
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
+    .pill-good {
+      border-color: #b7ddce;
+      color: #0e6656;
+      background: var(--good);
+    }
 
-        .toolbar button:hover,
-        .toolbar button:focus-visible {
-            background: #eef4ff;
-            transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(16, 33, 56, 0.2);
-            outline: none;
-        }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
 
-        .toolbar button:active {
-            transform: translateY(0);
-            box-shadow: none;
-        }
+    .compact-list {
+      margin: 0;
+      padding-left: 18px;
+    }
 
-        .status {
-            position: fixed;
-            left: 14px;
-            bottom: 14px;
-            background: #0f1722;
-            color: #ffffff;
-            padding: 8px 10px;
-            border-radius: 8px;
-            font-size: 12px;
-            opacity: 0;
-            transform: translateY(6px);
-            transition: opacity 0.2s ease, transform 0.2s ease;
-            pointer-events: none;
-            z-index: 1001;
-        }
+    .compact-list li {
+      margin-bottom: 3px;
+      font-size: 12.8px;
+    }
 
-        .status.show {
-            opacity: 0.95;
-            transform: translateY(0);
-        }
+    .compact-list li:last-child {
+      margin-bottom: 0;
+    }
 
-        @media (max-width: 720px) {
-            .resume-header,
-            main {
-                padding-left: 14px;
-                padding-right: 14px;
-            }
+    .print-only-space {
+      display: none;
+    }
 
-            .experience-board-head {
-                display: none;
-            }
+    .export-toolbar {
+      position: sticky;
+      top: 10px;
+      z-index: 20;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      padding: 10px 12px 2px;
+      background: linear-gradient(180deg, rgba(243, 247, 251, 0.95) 0%, rgba(243, 247, 251, 0.1) 100%);
+      backdrop-filter: blur(2px);
+    }
 
-            .experience-timeline {
-                padding-left: 14px;
-            }
+    .export-button {
+      border: 1px solid #b8cce3;
+      background: #ffffff;
+      color: #143a5b;
+      font-weight: 700;
+      font-size: 12.6px;
+      border-radius: 9px;
+      padding: 7px 11px;
+      cursor: pointer;
+      transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+    }
 
-            .timeline-step {
-                padding: 8px 9px 8px 10px;
-            }
+    .export-button:hover,
+    .export-button:focus-visible {
+      background: #eef6ff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(15, 50, 85, 0.18);
+      outline: none;
+    }
 
-            .timeline-step::before {
-                left: -21px;
-            }
+    .export-note {
+      margin-left: auto;
+      align-self: center;
+      color: #45617f;
+      font-size: 11.6px;
+      font-weight: 600;
+    }
 
-            .toolbar {
-                right: 10px;
-                left: 10px;
-                bottom: 10px;
-                justify-content: center;
-            }
-        }
+    .export-status {
+      width: 100%;
+      margin: 4px 0 0;
+      color: #1a4e78;
+      font-size: 11.8px;
+      font-weight: 700;
+      min-height: 16px;
+    }
 
-        @media print {
-            @page {
-                size: auto;
-                margin: 0.55in;
-            }
+    .export-render {
+      box-shadow: none !important;
+      border: 1px solid #d2dbe7 !important;
+      margin: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      background: #ffffff !important;
+    }
 
-            * {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
+    @media (max-width: 820px) {
+      .sheet {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+      }
 
-            html,
-            body {
-                background: #ffffff;
-                color: #000000;
-                font-size: 10.5pt;
-            }
+      header {
+        padding: 22px 16px 16px;
+      }
 
-            .page-wrap {
-                padding: 0;
-            }
+      main {
+        padding: 12px 12px 16px;
+      }
 
-            .resume {
-                width: 100%;
-                border: 1px solid var(--line);
-                border-radius: 0;
-                box-shadow: none;
-                overflow: visible;
-            }
+      .highlight-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
 
-            .resume-header {
-                border-bottom: 2px solid var(--line);
-                padding: 16pt 18pt 12pt;
-            }
+      .expertise-list,
+      .skills-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
 
-            main {
-                padding: 6pt 18pt 12pt;
-            }
+      .job-head {
+        grid-template-columns: 1fr;
+      }
 
-            section {
-                page-break-inside: avoid;
-                break-inside: avoid;
-            }
+      .export-toolbar {
+        justify-content: stretch;
+        flex-wrap: wrap;
+      }
 
-            .timeline-step {
-                break-inside: avoid;
-                page-break-inside: avoid;
-                border-color: #d5dce8;
-                box-shadow: none;
-            }
+      .export-button {
+        flex: 1 1 auto;
+      }
 
-            .job {
-                page-break-inside: avoid;
-                break-inside: avoid;
-            }
+      .export-note {
+        width: 100%;
+        margin-left: 0;
+      }
 
-            .experience-list > li {
-                page-break-inside: avoid;
-                break-inside: avoid;
-            }
+      .export-status {
+        width: 100%;
+      }
 
-            .toolbar,
-            .status {
-                display: none !important;
-            }
-        }
-    </style>
+      .date {
+        white-space: normal;
+      }
+    }
+
+    @media print {
+      @page {
+        size: letter;
+        margin: 0.42in;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      html,
+      body {
+        background: #ffffff;
+        font-size: 10.2pt;
+      }
+
+      .sheet {
+        width: 100%;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+      }
+
+      header {
+        padding: 16pt 18pt 12pt;
+      }
+
+      main {
+        padding: 10pt 14pt 10pt;
+      }
+
+      .section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .jobs article.job {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .page-break {
+        break-before: page;
+        page-break-before: always;
+      }
+
+      .print-only-space {
+        display: block;
+        height: 4pt;
+      }
+
+      .export-toolbar {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="page-wrap">
-        <article class="resume" id="resumeRoot" aria-label="Resume content">
-            <header class="resume-header">
-                <h1 id="personName">Mahiteja Bollojula</h1>
-                <p class="headline" id="personTitle">Lead Automation Engineer | Lead Engineer</p>
-                <p class="contact-line" id="contactLine">
-                    Phone:
-                    <a href="tel:+16789869419">+1-678 986 9419</a> | Email:
-                    <a href="mailto:mahiteja.bollojula01@gmail.com">mahiteja.bollojula01@gmail.com</a> |
-                    LinkedIn:
-                    <a href="https://www.linkedin.com/in/mahiteja-bollojula-477a60145/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-                </p>
-            </header>
-
-            <main>
-                <section id="summary" aria-labelledby="summaryHeading">
-                    <h2 id="summaryHeading">Summary</h2>
-                    <p class="summary-intro">
-                        Accomplished Lead Automation Engineer with 10+ years of experience in designing and implementing scalable test automation frameworks. Expert in leading engineering teams, driving CI/CD initiatives, and delivering high-quality software solutions across Java, TypeScript, Selenium, Playwright, Rest Assured, AWS, and cloud-based automation platforms.
-                    </p>
-                    <ul id="summaryList">
-                        <li>Led and designed scalable automation frameworks using Java, Selenium, Rest Assured, TypeScript, Playwright, Cucumber, JUnit, Maven, and BDD with Gherkin, integrating Docker and Jenkins on AWS for continuous integration.</li>
-                        <li>Created a Playwright framework using TypeScript for efficient cross-browser end-to-end testing with parallel execution.</li>
-                        <li>Skilled in Agile Scrum, SDLC, STLC, and Regression Testing, including Sprint Planning, Daily Standups, Backlog Grooming, and Sprint Retrospectives.</li>
-                        <li>Built AI-assisted applications and internal productivity tools using LLM APIs, prompt engineering.</li>
-                        <li>Developed AI-enabled quality engineering utilities for test case generation</li>
-                        <li>Experienced in API testing with Rest Assured and Java to build secure, performant, and maintainable solutions.</li>
-                        <li>Proficient in Page Object Model (POM) design pattern for clean and reusable Selenium test code.</li>
-                        <li>Experienced in database testing with PGSQL/PostgreSQL, validating data integrity and application to database consistency.</li>
-                        <li>Developed test automation execution platforms using AWS EC2, Jenkins, and Docker.</li>
-                        <li>Built AWS IAM roles using CloudFormation templates.</li>
-                        <li>Used JMeter for performance testing and integrated JMeter with Jenkins for continuous testing.</li>
-                        <li>Used Postman for functional API testing and Newman for CLI execution integrated with Jenkins CI/CD workflows.</li>
-                        <li>Used WireMock for service virtualization in web application performance testing.</li>
-                        <li>Familiar with Elasticsearch, OpenSearch, and KQL queries.</li>
-                    </ul>
-                </section>
-
-                <section id="experience" aria-labelledby="experienceHeading">
-                    <h2 id="experienceHeading">Experience</h2>
-                    <div class="experience-timeline" role="list" aria-label="Experience timeline">
-                        <article class="job timeline-step" role="listitem">
-                            <p class="timeline-year">2015-2018</p>
-                            <h3 class="job-title">Senior Software Engineer</h3>
-                            <p class="employer">Mphasis Pvt Ltd</p>
-                            <p class="date-range">01/2015 - 01/2018</p>
-                        </article>
-
-                        <article class="job timeline-step" role="listitem">
-                            <p class="timeline-year">2018</p>
-                            <h3 class="job-title">Senior Test Engineer</h3>
-                            <p class="employer">Accenture Solutions</p>
-                            <p class="date-range">01/2018 - 07/2018</p>
-                        </article>
-
-                        <article class="job timeline-step" role="listitem">
-                            <p class="timeline-year">2018-2019</p>
-                            <h3 class="job-title">Associate Software Engineer</h3>
-                            <p class="employer">Cognizant Technologies</p>
-                            <p class="date-range">07/2018 - 07/2019</p>
-                        </article>
-
-                        <article class="job timeline-step" role="listitem">
-                            <p class="timeline-year">2019-2021</p>
-                            <h3 class="job-title">Senior Quality Engineer</h3>
-                            <p class="employer">CBRE South Asia Pvt Ltd</p>
-                            <p class="date-range">07/2019 - 12/2021</p>
-                        </article>
-
-                        <article class="job timeline-step" role="listitem">
-                            <p class="timeline-year">2021-2025</p>
-                            <h3 class="job-title">Principal Lead Automation Engineer</h3>
-                            <p class="employer">Ameriprise India LLP</p>
-                            <p class="date-range">12/2021 - 05/2025</p>
-                        </article>
-
-                        <article class="job timeline-step" role="listitem">
-                            <p class="timeline-year">2025-Present</p>
-                            <h3 class="job-title">Lead Automation Engineer</h3>
-                            <p class="employer">Dollar General (Contractor iDWTeam)</p>
-                            <p class="date-range">06/2025 - Present</p>
-                        </article>
-                    </div>
-                </section>
-
-                <section id="skills" aria-labelledby="skillsHeading">
-                    <h2 id="skillsHeading">Skills</h2>
-                    <div class="skill-group">
-                        <p><span class="skill-label">Programming:</span> Java, TypeScript, JavaScript, Python</p>
-                    </div>
-                    <div class="skill-group">
-                        <p><span class="skill-label">Web and Mobile Automation:</span> Selenium WebDriver, Playwright, Selenium Grid, Cucumber, SoapUI, Postman, Newman, WireMock, Appium, Perfecto mobile devices, K6 performance tool, Report Portal</p>
-                    </div>
-                    <div class="skill-group">
-                        <p><span class="skill-label">Testing Frameworks and Practices:</span> JUnit, TestNG, BDD, Page Object Model (POM), Gherkin, SDLC, STLC, Regression Testing, Agile Scrum</p>
-                    </div>
-                    <div class="skill-group">
-                        <p><span class="skill-label">AI and Intelligent Automation:</span> AI-assisted application development, LLM API integration, prompt engineering, test case generation using AI, AI-powered documentation assistance</p>
-                    </div>
-                    <div class="skill-group">
-                        <p><span class="skill-label">CI/CD and DevOps:</span> Jenkins, GitLab CI/CD, Azure DevOps Pipeline, Docker, AWS EC2</p>
-                    </div>
-                    <div class="skill-group">
-                        <p><span class="skill-label">API and Performance Testing:</span> Rest Assured, Postman, Newman, JMeter, WireMock, K6 JavaScript</p>
-                    </div>
-                    <div class="skill-group">
-                        <p><span class="skill-label">Database and Search:</span> PGSQL, PostgreSQL, Elasticsearch, OpenSearch, KQL queries</p>
-                    </div>
-                    <div class="skill-group">
-                        <p><span class="skill-label">Build and Source Control:</span> Maven, NPM, Git, Bitbucket</p>
-                    </div>
-                    <div class="skill-group">
-                        <p><span class="skill-label">Test Management and Platforms:</span> JIRA, Azure DevOps, TFS, AWS IAM, CloudFormation templates</p>
-                    </div>
-                </section>
-
-                <section id="education" aria-labelledby="educationHeading">
-                    <h2 id="educationHeading">Education</h2>
-                    <p>Completed B.Tech in Information Technology in 2011.</p>
-                </section>
-
-                <section id="certifications" aria-labelledby="certificationsHeading">
-                    <h2 id="certificationsHeading">Certifications</h2>
-                    <ul>
-                        <li>
-                            Certified in Scrum Principles and Fundamentals from SCRUMStudy
-                            (
-                            <a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-MahitejaBollojula-854468.pdf" target="_blank" rel="noopener noreferrer">Certificate Link</a>
-                            )
-                        </li>
-                        <li>
-                            Claude 101 Certified
-                            (
-                            <a href="https://verify.skilljar.com/c/kyzzazknv85k" target="_blank" rel="noopener noreferrer">Verification Link</a>
-                            )
-                        </li>
-                    </ul>
-                </section>
-            </main>
-        </article>
+  <div class="sheet">
+    <div class="export-toolbar" aria-label="Export controls">
+      <button class="export-button" type="button" id="export-pdf">📄 Export PDF</button>
+      <button class="export-button" type="button" id="export-docx">📝 Export DOCX</button>
+      <span class="export-note">Export generates a standard PDF and a true .docx file.</span>
+      <div class="export-status" id="export-status" aria-live="polite"></div>
     </div>
 
-    <aside class="toolbar" id="exportToolbar" aria-label="Export toolbar">
-        <button type="button" id="exportPdfBtn">Export to PDF</button>
-        <button type="button" id="exportDocxBtn">Export to DOCX</button>
-        <button type="button" id="exportJpgBtn">Export to JPG</button>
-        <button type="button" id="exportMdBtn">Export to MD</button>
-    </aside>
-    <div class="status" id="statusToast" role="status" aria-live="polite"></div>
+    <header>
+      <h1>Mahiteja Bollojula</h1>
+      <p class="title-line">Principal / Lead Test Automation Engineer | SDET</p>
+      <ul class="contact" aria-label="Contact information">
+        <li>📞 +1-678-986-9419</li>
+        <li>✉️ <a href="mailto:mahiteja.bollojula01@gmail.com">mahiteja.bollojula01@gmail.com</a></li>
+        <li>🔗 LinkedIn</li>
+      </ul>
+    </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-    <script>
-        (function () {
-            function showStatus(message, isError) {
-                var toast = document.getElementById("statusToast");
-                if (!toast) {
-                    return;
+    <main>
+      <section class="section" aria-labelledby="summary-heading">
+        <h2 class="section-title" id="summary-heading">🏆 Professional Summary</h2>
+        <div class="section-body">
+          <p class="summary">
+            <strong>Principal/Lead Test Automation Engineer and SDET with 10+ years of experience</strong> delivering enterprise-scale web, API, mobile, data, and performance testing solutions across Dollar General, Ameriprise India, CBRE, Cognizant, Accenture, and Mphasis. Track record includes ownership of framework architecture, CI/CD execution platforms, and high-impact automation modernization with Java, TypeScript, Selenium WebDriver, Playwright, Rest Assured, Cucumber, and AWS.
+          </p>
+          <div class="highlight-strip" aria-label="Career highlights">
+            <div class="highlight">✅ 10+ years in quality engineering</div>
+            <div class="highlight">🔁 ~150 APIs migrated to Rest Assured BDD</div>
+            <div class="highlight">📊 ~9M OpenSearch records validated</div>
+            <div class="highlight">⚡ Parallel cross-browser Playwright execution</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="expertise-heading">
+        <h2 class="section-title" id="expertise-heading">🚀 Areas of Expertise</h2>
+        <div class="section-body">
+          <ul class="expertise-list">
+            <li>🧱 Test Architecture</li>
+            <li>🛠️ Framework Design</li>
+            <li>🔌 API Testing</li>
+            <li>📱 Mobile Testing</li>
+            <li>📈 Performance Testing</li>
+            <li>🤖 AI-Assisted Development</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-heading">
+        <h2 class="section-title" id="skills-heading">🛠️ Technical Skills</h2>
+        <div class="section-body skills-grid">
+          <div class="skill-card">
+            <h3>💻 Programming Languages</h3>
+            <p>Java, TypeScript, JavaScript, Python</p>
+          </div>
+          <div class="skill-card">
+            <h3>🧪 Frameworks & Practices</h3>
+            <p>Cucumber, BDD/Gherkin, JUnit, TestNG, Serenity Reporting, Playwright Test Runner, POM, regression testing, functional testing, data validation</p>
+          </div>
+          <div class="skill-card">
+            <h3>🌐 Web, Mobile & UI Automation</h3>
+            <p>Selenium WebDriver, Playwright, Selenium Grid, Appium, Perfecto Mobiles, Perfecto Connect, Quantum Framework, cross-browser testing, parallel execution</p>
+          </div>
+          <div class="skill-card">
+            <h3>🔌 API & Service Testing</h3>
+            <p>Rest Assured, Postman, Newman, SoapUI, WireMock, CA LISA, service virtualization, SOAP and REST API testing</p>
+          </div>
+          <div class="skill-card">
+            <h3>🔗 CI/CD & DevOps</h3>
+            <p>Jenkins, GitLab CI/CD, Azure DevOps, Azure DevOps Pipelines, Docker, Maven, NPM, Git, Bitbucket</p>
+          </div>
+          <div class="skill-card">
+            <h3>☁️ Cloud & Infrastructure</h3>
+            <p>AWS EC2, AWS CloudFormation, AWS IAM, Jenkins master integration</p>
+          </div>
+          <div class="skill-card">
+            <h3>🗄️ Databases, Search & Observability</h3>
+            <p>PostgreSQL, PGSQL, Elasticsearch, OpenSearch, KQL, Report Portal</p>
+          </div>
+          <div class="skill-card">
+            <h3>🤖 AI & Intelligent Automation</h3>
+            <p>AI-assisted development, LLM API integration, prompt engineering, AI-enabled test case generation, AI-powered documentation assistance</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience-heading">
+        <h2 class="section-title" id="experience-heading">💼 Professional Experience</h2>
+        <div class="section-body jobs">
+          <article class="job" aria-labelledby="dg-role">
+            <div class="job-head">
+              <div>
+                <h3 id="dg-role">Lead Automation Engineer</h3>
+                <p class="company">Dollar General (Contractor, iDWTeam)</p>
+              </div>
+              <p class="date">Jun 2025 - Present</p>
+            </div>
+            <div class="job-body">
+              <ul>
+                <li>Designed a TypeScript-based Playwright automation framework and integrated it with GitLab CI/CD, establishing repeatable cross-browser execution for enterprise web applications.</li>
+                <li>Implemented CI/CD integration across multiple automation frameworks, improving consistency of test execution and release validation.</li>
+                <li>Enabled testing of intranet applications on Perfecto mobile devices by implementing <strong>Perfecto Connect</strong>, expanding mobile coverage for internally hosted systems.</li>
+                <li>Developed K6 JavaScript scripts for UI performance testing, adding performance-focused validation to the quality engineering pipeline.</li>
+                <li>Drove lead-level delivery through framework ownership, execution governance, and collaboration with delivery stakeholders.</li>
+              </ul>
+              <div class="pill-row" aria-label="Dollar General highlights">
+                <span class="pill">📱 Perfecto Connect</span>
+                <span class="pill">🔗 GitLab CI/CD</span>
+                <span class="pill pill-good">🚀 Parallel Playwright</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="job" aria-labelledby="am-role">
+            <div class="job-head">
+              <div>
+                <h3 id="am-role">Principal Lead Automation Engineer</h3>
+                <p class="company">Ameriprise India LLP</p>
+              </div>
+              <p class="date">Dec 2021 - May 2025</p>
+            </div>
+            <div class="job-body">
+              <ul>
+                <li>Led a test engineering team in framework design, technical solutioning, and enterprise automation delivery across the Asset and Wealth Management horizontal.</li>
+                <li>Built a unified Java automation framework supporting Selenium web testing and Rest Assured API testing, with Serenity Reporting for consolidated execution visibility.</li>
+                <li>Developed a Playwright-Cucumber framework using TypeScript and BDD/Gherkin for maintainable end-to-end automation.</li>
+                <li>Architected an AWS EC2, Jenkins, and Docker-based test execution platform integrated with Jenkins master, enabling centralized automation runs across projects.</li>
+                <li>Integrated Postman collections into Jenkins via Newman CLI, converting manual API collections into repeatable CI/CD quality gates.</li>
+                <li>Executed functional validation of an OpenSearch application processing approximately <strong>9 million records</strong>, strengthening confidence in data integrity and search accuracy.</li>
+                <li>Built AWS IAM roles with CloudFormation templates to support controlled and repeatable infrastructure provisioning for automation workloads.</li>
+                <li>Applied AI-assisted development, LLM API integration, prompt engineering, and AI-enabled test generation to improve quality engineering productivity.</li>
+              </ul>
+              <div class="pill-row" aria-label="Ameriprise highlights">
+                <span class="pill">🏆 Principal-level leadership</span>
+                <span class="pill">☁️ AWS + Jenkins + Docker platform</span>
+                <span class="pill pill-good">📊 ~9M record validation</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="job" aria-labelledby="cbre-role">
+            <div class="job-head">
+              <div>
+                <h3 id="cbre-role">Senior Quality Engineer</h3>
+                <p class="company">CBRE South Asia Pvt. Ltd.</p>
+              </div>
+              <p class="date">Jul 2019 - Dec 2021</p>
+            </div>
+            <div class="job-body">
+              <ul>
+                <li>Developed a Java-based Selenium WebDriver and Cucumber BDD framework, improving reuse, readability, and maintainability of web regression coverage.</li>
+                <li>Created and maintained Selenium-Cucumber automation scripts for critical workflows, accelerating repeatable functional and regression testing.</li>
+                <li>Integrated web automation with Azure DevOps Pipelines, enabling automated execution as part of the delivery lifecycle.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job" aria-labelledby="cg-role">
+            <div class="job-head">
+              <div>
+                <h3 id="cg-role">Associate Software Engineer</h3>
+                <p class="company">Cognizant Technology Solutions</p>
+              </div>
+              <p class="date">Jul 2018 - Jul 2019</p>
+            </div>
+            <div class="job-body">
+              <ul>
+                <li>Designed a Rest Assured BDD framework for API automation and containerized execution with Docker, creating a maintainable foundation for service-level testing.</li>
+                <li>Migrated approximately <strong>150 APIs</strong> from CA LISA to the Rest Assured BDD framework, reducing licensed-tool dependency and supporting cost optimization.</li>
+                <li>Delivered UI automation and functional test execution for project releases, contributing to end-to-end quality commitments.</li>
+              </ul>
+              <div class="pill-row" aria-label="Cognizant highlights">
+                <span class="pill">🔌 Rest Assured BDD</span>
+                <span class="pill pill-good">🔁 ~150 API migrations</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="page-break" aria-hidden="true"></div>
+
+          <article class="job" aria-labelledby="acc-role">
+            <div class="job-head">
+              <div>
+                <h3 id="acc-role">Senior Test Engineer</h3>
+                <p class="company">Accenture Solutions</p>
+              </div>
+              <p class="date">Jan 2018 - Jul 2018</p>
+            </div>
+            <div class="job-body">
+              <ul>
+                <li>Developed functional and automated test cases using a Selenium BDD framework, increasing repeatability of regression validation.</li>
+                <li>Integrated the framework with JULES, the internal J.P. Morgan Chase Jenkins platform, in collaboration with DevOps teams to support continuous test execution.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job" aria-labelledby="mph-role">
+            <div class="job-head">
+              <div>
+                <h3 id="mph-role">Senior Software Engineer</h3>
+                <p class="company">Mphasis Pvt. Ltd.</p>
+              </div>
+              <p class="date">Jan 2015 - Jan 2018</p>
+            </div>
+            <div class="job-body">
+              <ul>
+                <li>Developed a Selenium Page Object Model framework and migrated legacy UFT automation scripts to Selenium, reducing licensed-tool dependency and supporting cost optimization.</li>
+                <li>Automated mobile workflows using Perfecto Mobiles and the <strong>Perfecto Quantum Framework</strong>, extending test coverage across mobile devices.</li>
+                <li>Enhanced an existing SoapUI automation framework with service orchestration and reporting capabilities, improving maintainability and execution visibility.</li>
+                <li>Integrated Selenium and SoapUI automation to validate an end-to-end e-signature application across UI and service layers.</li>
+                <li>Automated approximately <strong>80 SOAP APIs</strong> using the existing framework, expanding repeatable service-level coverage.</li>
+              </ul>
+              <div class="pill-row" aria-label="Mphasis highlights">
+                <span class="pill">📱 Perfecto Quantum Framework</span>
+                <span class="pill">🧩 Selenium POM</span>
+                <span class="pill pill-good">🔌 ~80 SOAP APIs automated</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="print-only-space" aria-hidden="true"></div>
+
+      <section class="section" aria-labelledby="leadership-heading">
+        <h2 class="section-title" id="leadership-heading">🚀 Lead & Principal-Level Strengths</h2>
+        <div class="section-body">
+          <ul class="compact-list">
+            <li>Owned test framework architecture across web and API domains, balancing maintainability, scale, and execution speed.</li>
+            <li>Built and governed enterprise CI/CD test execution platforms, including AWS-hosted Jenkins and Docker-based delivery pipelines.</li>
+            <li>Led cross-functional test engineering teams through solutioning, execution planning, and delivery assurance.</li>
+            <li>Mentored engineers on BDD, framework standards, and reliable automation design for enterprise portfolios.</li>
+            <li>Delivered executive-visible quality outcomes through measurable automation modernization initiatives.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="education-heading">
+        <h2 class="section-title" id="education-heading">🎓 Education & Certifications</h2>
+        <div class="section-body footer-grid">
+          <div>
+            <h3>Education</h3>
+            <p><strong>Bachelor of Technology (B.Tech), Information Technology</strong> | 2011</p>
+          </div>
+          <div>
+            <h3>Certifications</h3>
+            <ul class="compact-list">
+              <li>Scrum Principles and Fundamentals, SCRUMStudy</li>
+              <li>Claude 101 Certified</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script>
+    (function () {
+      var pdfButton = document.getElementById("export-pdf");
+      var docxButton = document.getElementById("export-docx");
+      var statusEl = document.getElementById("export-status");
+
+      function setBusy(isBusy) {
+        if (pdfButton) {
+          pdfButton.disabled = isBusy;
+        }
+        if (docxButton) {
+          docxButton.disabled = isBusy;
+        }
+      }
+
+      function setStatus(message, isError) {
+        if (!statusEl) {
+          return;
+        }
+        statusEl.textContent = message;
+        statusEl.style.color = isError ? "#9a1f2b" : "#1a4e78";
+      }
+
+      function exportPdf() {
+        var resumeRoot = document.querySelector(".sheet");
+        if (!resumeRoot) {
+          setStatus("PDF export failed: resume content not found.", true);
+          return;
+        }
+
+        if (typeof window.html2pdf !== "function") {
+          try {
+            setStatus("Library unavailable. Falling back to browser print.", true);
+            window.print();
+          } catch (error) {
+            setStatus("PDF export failed: " + error.message, true);
+          }
+          return;
+        }
+
+        setBusy(true);
+        setStatus("Generating PDF with export layout...", false);
+
+        var clone = resumeRoot.cloneNode(true);
+        clone.classList.add("export-render");
+
+        var toolbar = clone.querySelector(".export-toolbar");
+        if (toolbar && toolbar.parentNode) {
+          toolbar.parentNode.removeChild(toolbar);
+        }
+
+        var statusClone = clone.querySelector("#export-status");
+        if (statusClone && statusClone.parentNode) {
+          statusClone.parentNode.removeChild(statusClone);
+        }
+
+        var tempWrap = document.createElement("div");
+        tempWrap.style.position = "fixed";
+        tempWrap.style.left = "-99999px";
+        tempWrap.style.top = "0";
+        tempWrap.style.width = "8.5in";
+        tempWrap.style.background = "#ffffff";
+        tempWrap.appendChild(clone);
+        document.body.appendChild(tempWrap);
+
+        var options = {
+          margin: [0.35, 0.35, 0.35, 0.35],
+          filename: "Mahiteja_Bollojula_Resume.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true, logging: false },
+          jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+          pagebreak: { mode: ["css", "legacy"] }
+        };
+
+        window.html2pdf()
+          .set(options)
+          .from(clone)
+          .save()
+          .then(function () {
+            setStatus("PDF export completed.", false);
+          })
+          .catch(function (error) {
+            setStatus("PDF export failed: " + error.message, true);
+          })
+          .finally(function () {
+            if (tempWrap && tempWrap.parentNode) {
+              tempWrap.parentNode.removeChild(tempWrap);
+            }
+            setBusy(false);
+          });
+      }
+
+      function exportDocCompatible() {
+        if (!window.docx || !window.saveAs) {
+          setStatus("DOCX library unavailable. Check internet access and refresh.", true);
+          return;
+        }
+
+        setBusy(true);
+        setStatus("Generating true DOCX resume...", false);
+
+        var d = window.docx;
+        var Paragraph = d.Paragraph;
+        var TextRun = d.TextRun;
+        var AlignmentType = d.AlignmentType;
+        var HeadingLevel = d.HeadingLevel;
+        var TabStopType = d.TabStopType;
+        var TabStopPosition = d.TabStopPosition;
+        var Packer = d.Packer;
+
+        function heading(text) {
+          return new Paragraph({
+            text: text,
+            heading: HeadingLevel.HEADING_2,
+            thematicBreak: false,
+            spacing: { before: 260, after: 120 }
+          });
+        }
+
+        function bullet(text) {
+          return new Paragraph({
+            text: text,
+            bullet: { level: 0 },
+            spacing: { after: 60 }
+          });
+        }
+
+        function roleHeader(role, company, dates) {
+          return [
+            new Paragraph({
+              children: [
+                new TextRun({ text: role + " | " + company, bold: true }),
+                new TextRun({ text: "\t" + dates, bold: true })
+              ],
+              tabStops: [{ type: TabStopType.RIGHT, position: TabStopPosition.MAX }],
+              spacing: { before: 140, after: 70 }
+            })
+          ];
+        }
+
+        var doc = new d.Document({
+          creator: "Mahiteja Bollojula",
+          title: "Mahiteja Bollojula Resume",
+          description: "Principal and Lead SDET resume",
+          sections: [
+            {
+              properties: {
+                page: {
+                  margin: {
+                    top: 720,
+                    right: 720,
+                    bottom: 720,
+                    left: 720
+                  }
                 }
-                toast.textContent = message;
-                toast.style.background = isError ? "#7a1020" : "#0f1722";
-                toast.classList.add("show");
-                window.setTimeout(function () {
-                    toast.classList.remove("show");
-                }, 2200);
+              },
+              children: [
+                new Paragraph({
+                  text: "Mahiteja Bollojula",
+                  heading: HeadingLevel.TITLE,
+                  alignment: AlignmentType.CENTER,
+                  spacing: { after: 100 }
+                }),
+                new Paragraph({
+                  text: "Principal / Lead Test Automation Engineer | SDET",
+                  alignment: AlignmentType.CENTER,
+                  spacing: { after: 80 }
+                }),
+                new Paragraph({
+                  text: "+1-678-986-9419 | mahiteja.bollojula01@gmail.com | LinkedIn",
+                  alignment: AlignmentType.CENTER,
+                  spacing: { after: 200 }
+                }),
+
+                heading("Professional Summary"),
+                new Paragraph({
+                  text: "Principal/Lead Test Automation Engineer and SDET with 10+ years of experience delivering enterprise-scale web, API, mobile, data, and performance testing solutions across Dollar General, Ameriprise India, CBRE, Cognizant, Accenture, and Mphasis. Proven record of leading teams, modernizing automation, owning CI/CD platforms, and delivering reusable frameworks with Java, TypeScript, Selenium WebDriver, Playwright, Rest Assured, Cucumber, and AWS.",
+                  spacing: { after: 140 }
+                }),
+
+                heading("Areas of Expertise"),
+                bullet("Test Architecture"),
+                bullet("Framework Design"),
+                bullet("API Testing"),
+                bullet("Mobile Testing"),
+                bullet("Performance Testing"),
+                bullet("AI-Assisted Development"),
+
+                heading("Technical Skills"),
+                new Paragraph({ text: "Programming Languages: Java, TypeScript, JavaScript, Python", spacing: { after: 70 } }),
+                new Paragraph({ text: "Web, Mobile and UI Automation: Selenium WebDriver, Playwright, Selenium Grid, Appium, Perfecto Mobiles, Perfecto Connect, Quantum Framework, cross-browser testing, parallel execution", spacing: { after: 70 } }),
+                new Paragraph({ text: "API and Service Testing: Rest Assured, Postman, Newman, SoapUI, WireMock, CA LISA, service virtualization, SOAP and REST API testing", spacing: { after: 70 } }),
+                new Paragraph({ text: "Frameworks and Practices: Cucumber, BDD/Gherkin, JUnit, TestNG, Serenity Reporting, Playwright Test Runner, POM, regression testing, functional testing, data validation", spacing: { after: 70 } }),
+                new Paragraph({ text: "CI/CD and DevOps: Jenkins, GitLab CI/CD, Azure DevOps, Azure DevOps Pipelines, Docker, Maven, NPM, Git, Bitbucket", spacing: { after: 70 } }),
+                new Paragraph({ text: "Cloud and Infrastructure: AWS EC2, AWS CloudFormation, AWS IAM, Jenkins master integration", spacing: { after: 70 } }),
+                new Paragraph({ text: "Databases and Observability: PostgreSQL, PGSQL, Elasticsearch, OpenSearch, KQL, Report Portal", spacing: { after: 70 } }),
+                new Paragraph({ text: "AI and Intelligent Automation: AI-assisted development, LLM API integration, prompt engineering, AI-enabled test case generation, AI-powered documentation assistance", spacing: { after: 140 } }),
+
+                heading("Professional Experience"),
+                roleHeader("Lead Automation Engineer", "Dollar General (Contractor, iDWTeam)", "Jun 2025 - Present")[0],
+                bullet("Designed a TypeScript-based Playwright automation framework with GitLab CI/CD for repeatable cross-browser execution."),
+                bullet("Implemented CI/CD integration across multiple automation frameworks for consistent release validation."),
+                bullet("Enabled intranet mobile testing by implementing Perfecto Connect on Perfecto devices."),
+                bullet("Developed K6 JavaScript scripts for UI performance validation."),
+
+                roleHeader("Principal Lead Automation Engineer", "Ameriprise India LLP", "Dec 2021 - May 2025")[0],
+                bullet("Led a test engineering team in framework design and enterprise automation delivery."),
+                bullet("Built a unified Java framework for Selenium web testing and Rest Assured API testing with Serenity Reporting."),
+                bullet("Developed Playwright-Cucumber framework using TypeScript and BDD/Gherkin."),
+                bullet("Architected AWS EC2, Jenkins, and Docker execution platform integrated with Jenkins master."),
+                bullet("Integrated Postman collections into Jenkins through Newman for repeatable CI/CD quality gates."),
+                bullet("Validated OpenSearch workloads containing approximately 9 million records."),
+                bullet("Provisioned AWS IAM roles via CloudFormation for controlled automation infrastructure."),
+
+                roleHeader("Senior Quality Engineer", "CBRE South Asia Pvt. Ltd.", "Jul 2019 - Dec 2021")[0],
+                bullet("Developed Java Selenium WebDriver and Cucumber BDD framework to improve maintainability."),
+                bullet("Automated critical business workflows for functional and regression testing."),
+                bullet("Integrated automation with Azure DevOps Pipelines."),
+
+                roleHeader("Associate Software Engineer", "Cognizant Technology Solutions", "Jul 2018 - Jul 2019")[0],
+                bullet("Designed Rest Assured BDD framework for API automation with Docker execution."),
+                bullet("Migrated approximately 150 APIs from CA LISA to Rest Assured BDD framework."),
+
+                roleHeader("Senior Test Engineer", "Accenture Solutions", "Jan 2018 - Jul 2018")[0],
+                bullet("Developed functional and automated test cases using Selenium BDD framework."),
+                bullet("Integrated framework with JULES Jenkins platform in collaboration with DevOps."),
+
+                roleHeader("Senior Software Engineer", "Mphasis Pvt. Ltd.", "Jan 2015 - Jan 2018")[0],
+                bullet("Migrated legacy UFT scripts to Selenium Page Object Model framework."),
+                bullet("Automated mobile workflows with Perfecto Mobiles and Perfecto Quantum Framework."),
+                bullet("Automated approximately 80 SOAP APIs and integrated Selenium and SoapUI for end-to-end validation."),
+
+                heading("Education and Certifications"),
+                new Paragraph({ text: "Bachelor of Technology (B.Tech), Information Technology | 2011", spacing: { after: 80 } }),
+                bullet("Scrum Principles and Fundamentals, SCRUMStudy"),
+                bullet("Claude 101 Certified")
+              ]
             }
+          ]
+        });
 
-            function sanitizeText(text) {
-                return (text || "").replace(/\s+/g, " ").trim();
-            }
+        Packer.toBlob(doc)
+          .then(function (blob) {
+            window.saveAs(blob, "Mahiteja_Bollojula_Resume.docx");
+            setStatus("DOCX export completed.", false);
+          })
+          .catch(function (error) {
+            setStatus("DOCX export failed: " + error.message, true);
+          })
+          .finally(function () {
+            setBusy(false);
+          });
+      }
 
-            function getNodeTextWithLinks(node) {
-                var clone = node.cloneNode(true);
-                var links = [];
-                clone.querySelectorAll("a").forEach(function (a) {
-                    var href = sanitizeText(a.getAttribute("href") || "");
-                    var label = sanitizeText(a.textContent || "Link");
-                    if (href) {
-                        links.push(label + ": " + href);
-                    }
-                    a.replaceWith(document.createTextNode(label));
-                });
-                var baseText = sanitizeText(clone.textContent);
-                if (!links.length) {
-                    return baseText;
-                }
-                return baseText + " | " + links.join(" | ");
-            }
+      if (pdfButton) {
+        pdfButton.addEventListener("click", exportPdf);
+      }
 
-            function getCertificationDocxItems() {
-                var items = [];
-
-                document.querySelectorAll("#certifications li").forEach(function (li) {
-                    var parts = getInlinePartsFromNode(li);
-
-                    if (parts.length) {
-                        items.push(parts);
-                    }
-                });
-
-                return items;
-            }
-
-            function getInlinePartsFromNode(node) {
-                var parts = [];
-
-                node.childNodes.forEach(function (child) {
-                    if (child.nodeType === Node.TEXT_NODE) {
-                        var textValue = sanitizeText(child.textContent || "");
-                        if (textValue) {
-                            parts.push({ type: "text", value: textValue });
-                        }
-                        return;
-                    }
-
-                    if (child.nodeType === Node.ELEMENT_NODE) {
-                        if (child.tagName && child.tagName.toLowerCase() === "a") {
-                            var linkText = sanitizeText(child.textContent || "Link");
-                            var linkHref = sanitizeText(child.getAttribute("href") || "");
-
-                            if (linkHref) {
-                                parts.push({
-                                    type: "link",
-                                    text: linkText || "Link",
-                                    href: linkHref
-                                });
-                            } else if (linkText) {
-                                parts.push({ type: "text", value: linkText });
-                            }
-                            return;
-                        }
-
-                        var elementText = sanitizeText(child.textContent || "");
-                        if (elementText) {
-                            parts.push({ type: "text", value: elementText });
-                        }
-                    }
-                });
-
-                return parts;
-            }
-
-            function getContactDocxParts() {
-                var contactNode = document.getElementById("contactLine");
-                if (!contactNode) {
-                    return [];
-                }
-                return getInlinePartsFromNode(contactNode);
-            }
-
-            function slugify(text) {
-                return sanitizeText(text)
-                    .toLowerCase()
-                    .replace(/[^a-z0-9]+/g, "-")
-                    .replace(/^-+|-+$/g, "");
-            }
-
-            function downloadBlob(blob, filename) {
-                var url = URL.createObjectURL(blob);
-                var a = document.createElement("a");
-                a.href = url;
-                a.download = filename;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            }
-
-            function getResumeData() {
-                var educationItems = [];
-                document.querySelectorAll("#education p, #education li").forEach(function (node) {
-                    var text = getNodeTextWithLinks(node);
-                    if (text) {
-                        educationItems.push(text);
-                    }
-                });
-
-                var certificationsItems = [];
-                document.querySelectorAll("#certifications li, #certifications p").forEach(function (node) {
-                    var text = getNodeTextWithLinks(node);
-                    if (text) {
-                        certificationsItems.push(text);
-                    }
-                });
-
-                var resume = {
-                    name: sanitizeText(document.getElementById("personName").textContent),
-                    title: sanitizeText(document.getElementById("personTitle").textContent),
-                    contactLine: sanitizeText(document.getElementById("contactLine").textContent),
-                    summaryIntro: sanitizeText(document.querySelector("#summary .summary-intro").textContent),
-                    summaryItems: [],
-                    experiences: [],
-                    skills: [],
-                    educationItems: educationItems,
-                    certificationsItems: certificationsItems,
-                    certificationsDocxItems: getCertificationDocxItems(),
-                    contactDocxParts: getContactDocxParts()
-                };
-
-                document.querySelectorAll("#summaryList li").forEach(function (li) {
-                    resume.summaryItems.push(sanitizeText(li.textContent));
-                });
-
-                document.querySelectorAll("#experience article.job").forEach(function (jobNode) {
-                    var role = sanitizeText(jobNode.querySelector(".job-title").textContent);
-                    var employer = sanitizeText(jobNode.querySelector(".employer").textContent);
-                    var dateRange = sanitizeText(jobNode.querySelector(".date-range").textContent);
-
-                    resume.experiences.push({
-                        role: role,
-                        employer: employer,
-                        dateRange: dateRange
-                    });
-                });
-
-                document.querySelectorAll("#skills .skill-group p").forEach(function (p) {
-                    var labelNode = p.querySelector(".skill-label");
-                    var label = labelNode ? sanitizeText(labelNode.textContent.replace(/:$/, "")) : "Skills";
-                    var text = sanitizeText(p.textContent.replace(labelNode ? labelNode.textContent : "", ""));
-                    resume.skills.push({ label: label, text: text.replace(/^:\s*/, "") });
-                });
-
-                return resume;
-            }
-
-            function exportToPdf() {
-                showStatus("Opening print dialog...");
-                window.requestAnimationFrame(function () {
-                    window.print();
-                });
-            }
-
-            async function exportToJpg() {
-                var target = document.getElementById("resumeRoot");
-                if (!target || typeof html2canvas === "undefined") {
-                    showStatus("JPG export library did not load.", true);
-                    return;
-                }
-
-                showStatus("Rendering JPG...");
-                var canvas = await html2canvas(target, {
-                    scale: Math.min(3, Math.max(2, window.devicePixelRatio || 2)),
-                    useCORS: true,
-                    backgroundColor: "#ffffff"
-                });
-
-                canvas.toBlob(function (blob) {
-                    if (!blob) {
-                        showStatus("Could not generate JPG.", true);
-                        return;
-                    }
-                    var data = getResumeData();
-                    downloadBlob(blob, slugify(data.name || "resume") + "-resume.jpg");
-                    showStatus("JPG exported.");
-                }, "image/jpeg", 0.95);
-            }
-
-            function toMarkdown(data) {
-                var lines = [];
-                lines.push(data.name);
-                lines.push("");
-                lines.push(data.title);
-                lines.push("");
-                lines.push(data.contactLine);
-                lines.push("");
-                lines.push("## Summary");
-                lines.push("");
-                lines.push(data.summaryIntro);
-                lines.push("");
-                data.summaryItems.forEach(function (item) {
-                    lines.push("- " + item);
-                });
-                lines.push("");
-
-                lines.push("## Experience");
-                lines.push("");
-                data.experiences.forEach(function (job) {
-                    lines.push("### " + job.role);
-                    lines.push(job.employer);
-                    lines.push(job.dateRange);
-                    lines.push("");
-                });
-
-                lines.push("## Skills");
-                lines.push("");
-                data.skills.forEach(function (skill) {
-                    lines.push("- **" + skill.label + ":** " + skill.text);
-                });
-                lines.push("");
-
-                lines.push("## Education");
-                lines.push("");
-                data.educationItems.forEach(function (item) {
-                    lines.push("- " + item);
-                });
-                lines.push("");
-
-                lines.push("## Certifications");
-                lines.push("");
-                data.certificationsItems.forEach(function (item) {
-                    lines.push("- " + item);
-                });
-                lines.push("");
-
-                return lines.join("\n");
-            }
-
-            function exportToMd() {
-                var data = getResumeData();
-                var markdown = toMarkdown(data);
-                var blob = new Blob([markdown], { type: "text/markdown;charset=utf-8" });
-                downloadBlob(blob, slugify(data.name || "resume") + "-resume.md");
-                showStatus("Markdown exported.");
-            }
-
-            async function exportToDocx() {
-                if (typeof docx === "undefined") {
-                    showStatus("DOCX library did not load.", true);
-                    return;
-                }
-
-                var data = getResumeData();
-                var Paragraph = docx.Paragraph;
-                var HeadingLevel = docx.HeadingLevel;
-                var TextRun = docx.TextRun;
-                var Document = docx.Document;
-                var Packer = docx.Packer;
-                var ExternalHyperlink = docx.ExternalHyperlink;
-
-                var children = [];
-                children.push(new Paragraph({ text: data.name, heading: HeadingLevel.HEADING_1 }));
-                children.push(new Paragraph({ text: data.title }));
-                var contactRuns = [];
-                data.contactDocxParts.forEach(function (part, index) {
-                    var prefix = index === 0 ? "" : " ";
-
-                    if (part.type === "link") {
-                        contactRuns.push(new ExternalHyperlink({
-                            link: part.href,
-                            children: [
-                                new TextRun({
-                                    text: prefix + part.text,
-                                    style: "Hyperlink"
-                                })
-                            ]
-                        }));
-                        return;
-                    }
-
-                    contactRuns.push(new TextRun(prefix + part.value));
-                });
-                children.push(new Paragraph({
-                    children: contactRuns.length ? contactRuns : [new TextRun(data.contactLine)]
-                }));
-                children.push(new Paragraph({ text: "" }));
-
-                children.push(new Paragraph({ text: "Summary", heading: HeadingLevel.HEADING_2 }));
-                children.push(new Paragraph({ text: data.summaryIntro }));
-                data.summaryItems.forEach(function (item) {
-                    children.push(new Paragraph({
-                        children: [new TextRun(item)],
-                        bullet: { level: 0 }
-                    }));
-                });
-
-                children.push(new Paragraph({ text: "" }));
-                children.push(new Paragraph({ text: "Experience", heading: HeadingLevel.HEADING_2 }));
-
-                data.experiences.forEach(function (job) {
-                    children.push(new Paragraph({ text: job.role, heading: HeadingLevel.HEADING_3 }));
-                    children.push(new Paragraph({ text: job.employer }));
-                    children.push(new Paragraph({ text: job.dateRange }));
-                    children.push(new Paragraph({ text: "" }));
-                });
-
-                children.push(new Paragraph({ text: "Skills", heading: HeadingLevel.HEADING_2 }));
-                data.skills.forEach(function (skill) {
-                    children.push(new Paragraph({
-                        children: [
-                            new TextRun({ text: skill.label + ": ", bold: true }),
-                            new TextRun(skill.text)
-                        ]
-                    }));
-                });
-
-                children.push(new Paragraph({ text: "" }));
-                children.push(new Paragraph({ text: "Education", heading: HeadingLevel.HEADING_2 }));
-                data.educationItems.forEach(function (item) {
-                    children.push(new Paragraph({
-                        children: [new TextRun(item)],
-                        bullet: { level: 0 }
-                    }));
-                });
-                children.push(new Paragraph({ text: "" }));
-
-                children.push(new Paragraph({ text: "Certifications", heading: HeadingLevel.HEADING_2 }));
-                data.certificationsDocxItems.forEach(function (itemParts) {
-                    var runs = [];
-
-                    itemParts.forEach(function (part, index) {
-                        var prefix = index === 0 ? "" : " ";
-
-                        if (part.type === "link") {
-                            runs.push(new ExternalHyperlink({
-                                link: part.href,
-                                children: [
-                                    new TextRun({
-                                        text: prefix + part.text,
-                                        style: "Hyperlink"
-                                    })
-                                ]
-                            }));
-                            return;
-                        }
-
-                        runs.push(new TextRun(prefix + part.value));
-                    });
-
-                    children.push(new Paragraph({
-                        children: runs,
-                        bullet: { level: 0 }
-                    }));
-                });
-
-                var doc = new Document({
-                    sections: [{
-                        properties: {},
-                        children: children
-                    }]
-                });
-
-                var blob = await Packer.toBlob(doc);
-                downloadBlob(blob, slugify(data.name || "resume") + "-resume.docx");
-                showStatus("DOCX exported.");
-            }
-
-            document.getElementById("exportPdfBtn").addEventListener("click", exportToPdf);
-            document.getElementById("exportJpgBtn").addEventListener("click", function () {
-                exportToJpg().catch(function () {
-                    showStatus("JPG export failed.", true);
-                });
-            });
-            document.getElementById("exportMdBtn").addEventListener("click", exportToMd);
-            document.getElementById("exportDocxBtn").addEventListener("click", function () {
-                exportToDocx().catch(function () {
-                    showStatus("DOCX export failed.", true);
-                });
-            });
-        })();
-    </script>
+      if (docxButton) {
+        docxButton.addEventListener("click", exportDocCompatible);
+      }
+    })();
+  </script>
 </body>
 </html>
